@@ -50,9 +50,9 @@
     },
     "autoload-dev": {
         "classmap": [
-            "tests/TestCase.php",
-            "tests/UiTestCase.php",
-            "tests/PluginTestCase.php"
+            "modules/tests/TestCase.php",
+            "modules/tests/UiTestCase.php",
+            "modules/tests/PluginTestCase.php"
         ]
     },
     "scripts": {
