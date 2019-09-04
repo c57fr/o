@@ -25,4 +25,3 @@ vendor/
 storage/framework/
 storage/cms/
 storage/logs/
-/storage/framework/cache
