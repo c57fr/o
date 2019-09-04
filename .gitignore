@@ -1,21 +1,35 @@
-node_modules/
+composer.lock
+Homestead.yaml
+Homestead.json
+
+.env
+
+7node_modules/
 npm-debug.log
 yarn-error.log
 
-# Laravel 5 & Lumen specific
 public/storage
 public/hot
 
 storage/*.key
-.env
-Homestead.yaml
-Homestead.json
+storage/*
+
+!storage/app
+!storage/app/media/*
+!storage/app/uploads
+
+!storage/cms
+
+!storage/framework
+
+!storage/logs
+
+!storage/temp
+!storage/temp/*
+
+!storage/debugbar
+
 .vagrant
 .phpunit.result.cache
+
 vendor/
-
-storage/framework/
-storage/cms/
-storage/logs/
-
-composer.lock
