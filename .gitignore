@@ -18,7 +18,11 @@ storage/*.key
 .env
 Homestead.yaml
 Homestead.json
-/.vagrant
+.vagrant
 .phpunit.result.cache
-/storage/framework
-/vendor/
+vendor/
+
+storage/framework/
+storage/cms/
+storage/logs/
+/storage/framework/cache
