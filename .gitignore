@@ -1,10 +1,12 @@
+.vscode/
+
 composer.lock
 Homestead.yaml
 Homestead.json
 
 .env
 
-7node_modules/
+node_modules/
 npm-debug.log
 yarn-error.log
 
