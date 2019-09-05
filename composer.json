@@ -39,9 +39,9 @@
     },
     "autoload-dev": {
         "classmap": [
-            "modules/tests/TestCase.php",
-            "modules/tests/UiTestCase.php",
-            "modules/tests/PluginTestCase.php"
+            "tests/TestCase.php",
+            "tests/UiTestCase.php",
+            "tests/PluginTestCase.php"
         ]
     },
     "scripts": {
