@@ -1,7 +1,0 @@
-{
-  "requires": true,
-  "dependencies": {
-    "webpack": "^1.0.0",
-    "webpack-cli": "^1.0.0"
-  }
-}
