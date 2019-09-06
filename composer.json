@@ -1,34 +1,22 @@
 {
-    "name": "october/october",
-    "description": "OctoberCMS",
-    "homepage": "https://octobercms.com",
-    "type": "project",
-    "keywords": ["october", "cms", "octobercms", "laravel"],
+    "name": "grcote7/o",
+    "description": "O",
+    "homepage": "http://o",
+    "keywords": ["o", "october", "cms", "octobercms", "laravel"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Luke Towers",
-            "email": "octobercms@luketowers.ca",
-            "homepage": "https://luketowers.ca",
-            "role": "Maintainer"
+            "name": "Lionel COTE",
+            "email": "GrCOTE7@gmail.com",
+            "role": "Founder"
         }
     ],
     "support": {
-        "issues": "https://github.com/octobercms/october/issues",
-        "forum": "https://octobercms.com/forum/",
-        "docs": "https://octobercms.com/docs/",
+        "issues": "https://github.com/c57fr/o/issues",
+        "forum": "https://github.com/c57fr/o/issues",
+        "docs": "https://github.com/c57fr/o/blob/master/README.md",
         "irc": "irc://irc.freenode.net/october",
-        "source": "https://github.com/octobercms/october"
+        "source": "https://github.com/c57fr/o"
     },
     "require": {
         "php": ">=7.0",
