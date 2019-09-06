@@ -4,7 +4,7 @@ composer.lock
 Homestead.yaml
 Homestead.json
 
-.env
+# .env
 
 node_modules/
 npm-debug.log
