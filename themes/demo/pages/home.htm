@@ -1,6 +1,14 @@
 title = "Demonstration"
 url = "/"
 layout = "default"
+is_hidden = 0
+==
+<?php
+function onStart()
+{
+    $this['var'] = phpversion();
+}
+?>
 ==
 <div class="jumbotron">
     <div class="container">
@@ -10,7 +18,8 @@ layout = "default"
 
 <div class="container">
 
-    <div class="page-header">
+    <!-- Header -->
+    <div class="page-header">oOo {{ var }}
         <h2>Overview <small>Basic concepts</small></h2>
     </div>
     <p>
