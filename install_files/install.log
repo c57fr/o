@@ -1,0 +1,723 @@
+.=====================================================================.
+                                                                       
+  .d8888b.   .o8888b.  db  .d8888b.  d8888b. d88888b d8888b.  .d888b.  
+ .8P    Y8. d8P    Y8  88 .8P    Y8. 88  `8D 88'     88  `8D .8P , Y8. 
+ 88      88 8P     .ooo88 88      88 88oooY' 88oooo  88oobY' 88  |  88 
+ 88      88 8b     `~~~88 88      88 88~~~b. 88~~~~  88`8b   88  |/ 88 
+ `8b    d8' Y8b    d8  88 `8b    d8' 88   8D 88.     88 `88. `8b | d8' 
+  `Y8888P'   `Y8888P'  YP  `Y8888P'  Y8888P' Y88888P 88   YD  `Y888P'  
+                                                                       
+`========================== INSTALLATION LOG ========================='
+
+[2019/09/07 09:47:53] Host: Linux homestead 4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019 x86_64
+[2019/09/07 09:47:53] PHP version: 7.3.9-1+ubuntu18.04.1+deb.sury.org+1
+[2019/09/07 09:47:53] Server software: nginx/1.15.8
+[2019/09/07 09:47:53] Operating system: Linux
+[2019/09/07 09:47:53] Memory limit: 512M
+[2019/09/07 09:47:53] Max execution time: 3600
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:53] Postback payload: Array
+(
+    [code] => phpVersion
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:53] System check: phpVersion
+[2019/09/07 09:47:53] Requirement phpVersion +OK
+[2019/09/07 09:47:53] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:54] Postback payload: Array
+(
+    [code] => curlLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:54] System check: curlLibrary
+[2019/09/07 09:47:54] Requirement curlLibrary +OK
+[2019/09/07 09:47:54] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:54] Postback payload: Array
+(
+    [code] => liveConnection
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:54] System check: liveConnection
+[2019/09/07 09:47:55] Server request: ping
+[2019/09/07 09:47:55] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/ping
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 494
+    [request_size] => 155
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.405873
+    [namelookup_time] => 5.4E-5
+    [connect_time] => 0.17104
+    [pretransfer_time] => 0.171176
+    [size_upload] => 16
+    [size_download] => 12
+    [speed_download] => 29
+    [speed_upload] => 39
+    [download_content_length] => -1
+    [upload_content_length] => 16
+    [starttransfer_time] => 0.388786
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.37.223.30
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 10.0.2.15
+    [local_port] => 50458
+    [http_version] => 2
+    [protocol] => 1
+    [ssl_verifyresult] => 0
+    [scheme] => HTTP
+)
+
+[2019/09/07 09:47:55] Requirement liveConnection +OK
+[2019/09/07 09:47:55] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:55] Postback payload: Array
+(
+    [code] => writePermission
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:55] System check: writePermission
+[2019/09/07 09:47:55] Requirement writePermission +OK
+[2019/09/07 09:47:55] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:56] Postback payload: Array
+(
+    [code] => pdoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:56] System check: pdoLibrary
+[2019/09/07 09:47:56] Requirement pdoLibrary +OK
+[2019/09/07 09:47:56] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:56] Postback payload: Array
+(
+    [code] => mbstringLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:56] System check: mbstringLibrary
+[2019/09/07 09:47:56] Requirement mbstringLibrary +OK
+[2019/09/07 09:47:56] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:57] Postback payload: Array
+(
+    [code] => fileinfoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:57] System check: fileinfoLibrary
+[2019/09/07 09:47:57] Requirement fileinfoLibrary +OK
+[2019/09/07 09:47:57] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:57] Postback payload: Array
+(
+    [code] => sslLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:57] System check: sslLibrary
+[2019/09/07 09:47:57] Requirement sslLibrary +OK
+[2019/09/07 09:47:57] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:58] Postback payload: Array
+(
+    [code] => zipLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:58] System check: zipLibrary
+[2019/09/07 09:47:58] Requirement zipLibrary +OK
+[2019/09/07 09:47:58] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:47:58] Postback payload: Array
+(
+    [code] => gdLibrary
+    [handler] => onCheckRequirement
+)
+
+[2019/09/07 09:47:58] System check: gdLibrary
+[2019/09/07 09:47:58] Requirement gdLibrary +OK
+[2019/09/07 09:47:58] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:49:21] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:49:21] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdminAccount
+)
+
+[2019/09/07 09:49:21] Handler error (onValidateAdminAccount): Please specify password
+[2019/09/07 09:49:21] Trace log:
+#0 /home/vagrant/code/o/install_files/php/Installer.php(48): Installer->onValidateAdminAccount()
+#1 /home/vagrant/code/o/install_files/php/boot.php(91): Installer->__construct()
+#2 /home/vagrant/code/o/i.php(1): include('/home/vagrant/c...')
+#3 {main}
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:01] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateDatabase
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:01] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdminAccount
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:01] Postback payload: Array
+(
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onValidateAdvancedConfig
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:10] Postback payload: Array
+(
+    [handler] => onGetPopularThemes
+)
+
+[2019/09/07 09:50:10] Server request: theme/popular
+[2019/09/07 09:50:10] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/theme/popular
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 494
+    [request_size] => 164
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.594255
+    [namelookup_time] => 0.004425
+    [connect_time] => 0.179936
+    [pretransfer_time] => 0.180067
+    [size_upload] => 16
+    [size_download] => 4026
+    [speed_download] => 6777
+    [speed_upload] => 26
+    [download_content_length] => -1
+    [upload_content_length] => 16
+    [starttransfer_time] => 0.576264
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.37.223.30
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 10.0.2.15
+    [local_port] => 50464
+    [http_version] => 2
+    [protocol] => 1
+    [ssl_verifyresult] => 0
+    [scheme] => HTTP
+)
+
+[2019/09/07 09:50:10] Execute handler (onGetPopularThemes): Array
+(
+    [0] => Array
+        (
+            [name] => Clean Blog
+            [description] => Clean blogger theme.
+            [code] => Responsiv.Clean
+            [updated_at] => 2019-09-07 08:20:23
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/58e/304/7a4/thumb_6978_210_140_0_0_crop.png
+            [author] => Responsiv Internet
+            [hash] => 07e5b7066168a94349ac92018770c2e8
+            [demo_url] => http://daftspunk.com/
+            [product_url] => http://gateway.octobercms.com/theme/responsiv-clean
+        )
+
+    [1] => Array
+        (
+            [name] => New Age
+            [description] => Landing page for mobile apps
+            [code] => VojtaSvoboda.newage
+            [updated_at] => 2019-09-07 08:22:04
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/580/7eb/dc9/thumb_5770_210_140_0_0_crop.png
+            [author] => Vojta Svoboda
+            [hash] => 09d9e47e64a2ed47dc35146a792008c2
+            [demo_url] => https://blackrockdigital.github.io/startbootstrap-new-age/
+            [product_url] => http://gateway.octobercms.com/theme/vojtasvoboda-newage
+        )
+
+    [2] => Array
+        (
+            [name] => Stellar
+            [description] => a clean, responsive one page and blog theme
+            [code] => Zwiebl.zwiebl_stellar
+            [updated_at] => 2019-09-07 09:13:52
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/57e/bb4/fe9/thumb_5641_210_140_0_0_crop.png
+            [author] => Alpen.Space
+            [hash] => 19345446d87ad08e6937503019a43fd9
+            [demo_url] => https://theme-demo.alpen.space/stellar/
+            [product_url] => http://gateway.octobercms.com/theme/zwiebl-zwiebl-stellar
+        )
+
+    [3] => Array
+        (
+            [name] => Blank Bootstrap 4
+            [description] => A blank Bootstrap 4 template
+            [code] => Hambern.hambern-blank-bootstrap-4
+            [updated_at] => 2019-09-07 09:46:13
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/57b/9ba/c48/thumb_5365_210_140_0_0_crop.png
+            [author] => Mattias Hamberg
+            [hash] => 9a6762de633774de2cebf69a88f290d1
+            [demo_url] => 
+            [product_url] => http://gateway.octobercms.com/theme/hambern-hambern-blank-bootstrap-4
+        )
+
+    [4] => Array
+        (
+            [name] => Bonjour
+            [description] => A sample multi-lingual theme for translated content.
+            [code] => RainLab.Bonjour
+            [updated_at] => 2019-09-06 17:25:07
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/577/9df/850/thumb_4911_210_140_0_0_crop.png
+            [author] => RainLab
+            [hash] => f1084f81e0e1c5c8d22317794292deb3
+            [demo_url] => 
+            [product_url] => http://gateway.octobercms.com/theme/rainlab-bonjour
+        )
+
+    [5] => Array
+        (
+            [name] => Viola
+            [description] => One Page Theme based on Bootstrap 4 with different color schemes, scss files included
+            [code] => JumpLink.Viola
+            [updated_at] => 2019-09-07 09:14:24
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/574/6af/435/thumb_4705_210_140_0_0_crop.png
+            [author] => JumpLink
+            [hash] => fe09a3915724fcc241e0e5914c8ea346
+            [demo_url] => http://healthyteeth.jumplink.eu/
+            [product_url] => http://gateway.octobercms.com/theme/jumplink-viola
+        )
+
+    [6] => Array
+        (
+            [name] => Relax
+            [description] => A fictional site called House of Chairs that demonstrates how to build a client-friendly website.
+            [code] => RainLab.Relax
+            [updated_at] => 2019-09-07 09:16:44
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/559/49e/2da/thumb_2585_210_140_0_0_crop.png
+            [author] => RainLab
+            [hash] => a35c64b09ad6347b8a226291e5b8fd75
+            [demo_url] => 
+            [product_url] => http://gateway.octobercms.com/theme/rainlab-relax
+        )
+
+    [7] => Array
+        (
+            [name] => Vanilla
+            [description] => A plain starter template that implements account management, a blog and community forum.
+            [code] => RainLab.Vanilla
+            [updated_at] => 2019-09-07 09:46:14
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/552/da4/0f8/thumb_2106_210_140_0_0_crop.png
+            [author] => RainLab
+            [hash] => 4b893d1c085a298e9b9b1d13635a675f
+            [demo_url] => 
+            [product_url] => http://gateway.octobercms.com/theme/rainlab-vanilla
+        )
+
+    [8] => Array
+        (
+            [name] => Flat UI
+            [description] => A theme that uses a Flat user-interface and has no dependencies on others plugins.
+            [code] => Responsiv.Flat
+            [updated_at] => 2019-09-07 02:31:07
+            [image] => //gateway.octobercms.com/storage/app/uploads/public/53d/084/fbc/thumb_543_210_140_0_0_crop.png
+            [author] => Responsiv Internet
+            [hash] => 3b3994c2c50d1b0f49a0725d764c12e8
+            [demo_url] => 
+            [product_url] => http://gateway.octobercms.com/theme/responsiv-flat
+        )
+
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:26] Postback payload: Array
+(
+    [step] => getMetaData
+    [meta] => 
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:50:26] Install step: getMetaData
+[2019/09/07 09:50:27] Server request: core/install
+[2019/09/07 09:50:27] Request information: Array
+(
+    [url] => http://gateway.octobercms.com/api/core/install
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 477
+    [request_size] => 163
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.576124
+    [namelookup_time] => 0.00423
+    [connect_time] => 0.175332
+    [pretransfer_time] => 0.175452
+    [size_upload] => 16
+    [size_download] => 132
+    [speed_download] => 229
+    [speed_upload] => 27
+    [download_content_length] => -1
+    [upload_content_length] => 16
+    [starttransfer_time] => 0.558713
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 52.37.223.30
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 10.0.2.15
+    [local_port] => 50466
+    [http_version] => 2
+    [protocol] => 1
+    [ssl_verifyresult] => 0
+    [scheme] => HTTP
+)
+
+[2019/09/07 09:50:27] Step getMetaData +OK
+[2019/09/07 09:50:27] Execute handler (onInstallStep): Array
+(
+    [result] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+            [plugins] => Array
+                (
+                )
+
+            [themes] => Array
+                (
+                )
+
+        )
+
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:27] Postback payload: Array
+(
+    [step] => downloadCore
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+        )
+
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:50:27] Install step: downloadCore
+[2019/09/07 09:50:33] Saving to file (core): /home/vagrant/code/o/install_files/temp/a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/09/07 09:50:33] Step downloadCore +OK
+[2019/09/07 09:50:33] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:50:34] Postback payload: Array
+(
+    [step] => extractCore
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+        )
+
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:50:34] Install step: extractCore
+[2019/09/07 09:50:34] Extracting file (core): a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/09/07 09:51:09] Step extractCore +OK
+[2019/09/07 09:51:09] Execute handler (onInstallStep): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:51:09] Postback payload: Array
+(
+    [step] => setupConfig
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+        )
+
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:51:09] Install step: setupConfig
+[2019/09/07 09:51:11] Step setupConfig +OK
+[2019/09/07 09:51:11] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:51:11] Postback payload: Array
+(
+    [step] => createAdmin
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+        )
+
+    [db_type] => mysql
+    [db_host] => 192.168.10.10
+    [db_port] => 
+    [db_name] => o
+    [db_user] => homestead
+    [db_pass] => *******
+    [admin_first_name] => Admin
+    [admin_last_name] => Person
+    [admin_email] => *******@*****.com
+    [admin_login] => admin
+    [admin_password] => *******
+    [admin_confirm_password] => *******
+    [backend_uri] => /backend
+    [encryption_code] => *******
+    [file_mask] => 777
+    [folder_mask] => 777
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:51:11] Install step: createAdmin
+[2019/09/07 09:51:19] Step createAdmin +OK
+[2019/09/07 09:51:19] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:51:19] Postback payload: Array
+(
+    [disableLog] => 1
+)
+
+[2019/09/07 09:51:19] Install step: setupProject
+[2019/09/07 09:51:19] Step setupProject +OK
+[2019/09/07 09:51:19] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
+.============================ POST REQUEST ==========================.
+[2019/09/07 09:51:19] Postback payload: Array
+(
+    [step] => finishInstall
+    [meta] => Array
+        (
+            [core] => Array
+                (
+                    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+                    [build] => 458
+                    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+                )
+
+        )
+
+    [hash] => 462e49f2d6d2896abb56874dbdb64aee
+    [build] => 458
+    [uhash] => 7ecf00bd75e60458191bfcdc43dc14e5
+    [handler] => onInstallStep
+)
+
+[2019/09/07 09:51:19] Install step: finishInstall
+[2019/09/07 09:51:20] Cleaning up file: a74ad8dfacd4f985eb3977517615ce25.arc
+[2019/09/07 09:51:21] Step finishInstall +OK
+[2019/09/07 09:51:21] Execute handler (onInstallStep): Array
+(
+    [result] => 
+)
+
