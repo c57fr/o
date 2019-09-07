@@ -10,28 +10,31 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-public/storage
-public/hot
+# public/storage
+# public/hot
 
-storage/*.key
-storage/*
+# storage/*.key
+# storage/*
 
-!storage/app
-!storage/app/media/*
-!storage/app/uploads
+# !storage/app
+# !storage/app/media/*
+# !storage/app/uploads
 
-!storage/cms
+# storage/cms
 
-!storage/framework
 
-!storage/logs
+storage/
+# storage/framework/cache/
 
-!storage/temp
-!storage/temp/*
+# !storage/logs
 
-!storage/debugbar
+# !storage/temp
+# !storage/temp/*
 
-.vagrant
-.phpunit.result.cache
+# !storage/debugbar
 
+# .vagrant
+# .phpunit.result.cache
+
+# storage/
 vendor/
