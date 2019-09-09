@@ -5,8 +5,12 @@ description = "Default layout"
     <head>
         <meta charset="utf-8">
         <title>October CMS - {{ this.page.title }}</title>
+        {% if this.page.__isset('title') and this.page.title is not empty %}
+        <meta name="title" content="{{ this.page.title }}">
+        {% endif %}
+        {% if this.page.__isset('meta_description') and this.page.meta_description is not empty %}
         <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
+        {% endif %}
         <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
