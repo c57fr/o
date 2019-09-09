@@ -407,7 +407,7 @@ return [
     |
     */
 
-    'enableTwigStrictVariables' => false,
+    'enableTwigStrictVariables' => null,
 
     /*
     |--------------------------------------------------------------------------
