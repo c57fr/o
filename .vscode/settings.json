@@ -1,0 +1,36 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 30,
+            "database": "vap",
+            "dialect": "MySQL",
+            "name": "1/     H",
+            "password": "secret",
+            "port": 3306,
+            "server": "192.168.10.10",
+            "username": "homestead"
+        },
+        {
+            "askForPassword": false,
+            "connectionTimeout": 30,
+            "database": "admin_mans",
+            "dialect": "MySQL",
+            "name": "2/ SQL",
+            "password": "secret",
+            "port": 3306,
+            "server": "sg.newnrj.com",
+            "username": "admin_jlmoromgc7"
+        },
+        {
+            "askForPassword": false,
+            "connectionTimeout": 30,
+            "database": "admin_vap",
+            "dialect": "MySQL",
+            "name": "3/   SG",
+            "password": "Kaelc777",
+            "port": 3306,
+            "server": "sg.newnrj.com",
+            "username": "admin_aadminli"
+        }
+    ]
+}
