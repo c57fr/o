@@ -1,0 +1,13 @@
+title = "Account"
+url = "/account/:code?"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "/"
+paramCode = "code"
+forceSecure = 0
+==
+oOo <a href="/lost-password">Forgot password ?</a> oOo
+
+{% component 'account' %}

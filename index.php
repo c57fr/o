@@ -5,6 +5,14 @@
  * @package  October
  * @author   Alexey Bobkov, Samuel Georges
  */
+//2do Learning OCMS
+// http://prntscr.com/p8a3h9
+
+/*
+Hi all> OctoberCMS is really a very GREAT framework !!! I now play with the User plugin... All works perfectly (Login/Logout/registration/Email confirmation)... Except: The feature 'Forgot Password'
+The 'user' 
+*/
+
 
 /*
 |--------------------------------------------------------------------------
