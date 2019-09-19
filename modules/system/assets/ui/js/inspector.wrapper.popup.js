@@ -188,7 +188,7 @@
     }
 
     InspectorPopup.prototype.onPopoverKeyDown = function(ev) {
-        if(ev.key === 'Enter') {
+        if(ev.keyCode == 13) {
             $(ev.currentTarget).trigger('close.oc.popover')
         }
     }

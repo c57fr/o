@@ -91,7 +91,7 @@
         // and doesn't register own handler.
 
         // Tab pressed
-        if (ev.key === 'Tab') {
+        if (ev.keyCode == 9) {
             this.onClick(ev)
             return
         }

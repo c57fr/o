@@ -1025,7 +1025,6 @@
             var item = items[i],
                 path = item.getAttribute('data-path')
 
-
             if (item.getAttribute('data-item-type') == 'folder')
                 data.folders.push(path)
             else
@@ -1251,22 +1250,21 @@
     MediaManager.prototype.onKeyDown = function(ev) {
         var eventHandled = false
 
-
-        switch (ev.key) {
-            case 'Enter':
+        switch (ev.which) {
+            case 13:
                 var items = this.getSelectedItems(true, true)
                 if (items.length > 0)
                     this.navigateToItem($(items[0]))
 
                 eventHandled = true
             break;
-            case 'ArrowRight':
-            case 'ArrowDown':
+            case 39:
+            case 40:
                 this.selectRelative(true, ev.shiftKey)
                 eventHandled = true
             break;
-            case 'ArrowLeft':
-            case 'ArrowUp':
+            case 37:
+            case 38:
                 this.selectRelative(false, ev.shiftKey)
                 eventHandled = true
             break;

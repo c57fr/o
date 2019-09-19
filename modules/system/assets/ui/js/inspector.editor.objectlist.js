@@ -297,7 +297,7 @@
         }
 
         var properties = this.propertyDefinition.itemProperties,
-            values = JSON.parse(dataStr),
+            values = $.parseJSON(dataStr),
             options = {
                 enableExternalParameterEditor: false,
                 onChange: this.proxy(this.onInspectorDataChange),
@@ -447,7 +447,7 @@
 
         for (var i = 0, len = dataRows.length; i < len; i++) {
             var dataRow = dataRows[i],
-                rowData = JSON.parse(dataRow.getAttribute('data-inspector-values'))
+                rowData = $.parseJSON(dataRow.getAttribute('data-inspector-values'))
 
             if (!this.isKeyValueMode()) {
                 result.push(rowData)
@@ -500,7 +500,7 @@
 
         for (var i = 0, len = dataRows.length; i < len; i++) {
             var dataRow = dataRows[i],
-                rowData = JSON.parse(dataRow.getAttribute('data-inspector-values'))
+                rowData = $.parseJSON(dataRow.getAttribute('data-inspector-values'))
 
             if (selectedRow == dataRow) {
                 continue

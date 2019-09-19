@@ -85,24 +85,28 @@
         }
 
         function _handleUiBlocksKeydown(ev) {
-            if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp' || ev.key === 'Backspace' || ev.key === 'Delete') {
+            if (ev.which == 40 || ev.which == 38 || ev.which == 8 || ev.which == 46) {
                 var $block = $(editor.selection.element())
                 if ($block.is('br')) {
                     $block = $block.parent()
                 }
 
                 if (!!$block.length) {
-                    switch (ev.key) {
-                        case 'ArrowUp':
+                    switch (ev.which) {
+                        case 38:
+                            // Up arrow
                             _handleUiBlockCaretIn($block.prev())
                         break
-                        case 'ArrowDown':
+                        case 40:
+                            // Down arrow
                             _handleUiBlockCaretIn($block.next())
                         break
-                        case 'Delete':
+                        case 46:
+                            // Delete key
                             _handleUiBlockCaretClearEmpty($block.next(), $block)
                         break
-                        case 'Backspace':
+                        case 8:
+                            // Backspace key
                             _handleUiBlockCaretClearEmpty($block.prev(), $block)
                         break
                     }
@@ -129,23 +133,27 @@
         }
 
         function _uiBlockKeyDown(ev, block) {
-            if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp' || ev.key === 'Enter' || ev.key === 'Backspace' || ev.key === 'Delete') {
-                switch (ev.key) {
-                    case 'ArrowDown':
+            if (ev.which == 40 || ev.which == 38 || ev.which == 13 || ev.which == 8 || ev.which == 46) {
+                switch (ev.which) {
+                    case 40:
+                        // Down arrow
                         _focusUiBlockOrText($(block).next(), true)
                     break
-                    case 'ArrowUp':
+                    case 38:
+                        // Up arrow
                         _focusUiBlockOrText($(block).prev(), false)
                     break
-                    case 'Enter':
+                    case 13:
+                        // Enter key
                         var $paragraph = $('<p><br/></p>')
                         $paragraph.insertAfter(block)
                         editor.selection.setAfter(block)
                         editor.selection.restore()
                         editor.undo.saveStep()
                     break
-                    case 'Backspace':
-                    case 'Delete':
+                    case 8:
+                    case 46:
+                        // Delete / Backspace key
                         var $nextFocus = $(block).next(),
                             gotoStart = true
 

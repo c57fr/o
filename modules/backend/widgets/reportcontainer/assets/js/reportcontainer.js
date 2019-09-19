@@ -58,7 +58,7 @@
 
         this.$el.on('hidden.oc.inspector', '[data-inspectable]', function() {
             var values = $('[data-inspector-values]', this).val(),
-                parsedValues = JSON.parse(values),
+                parsedValues = $.parseJSON(values),
                 li = $(this).closest('li').get(0)
 
             self.$form.request(self.alias + '::onUpdateWidget', {

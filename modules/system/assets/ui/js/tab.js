@@ -40,7 +40,7 @@
         })
 		
 		this.$el.on('mousedown', "li[data-tab-id]", function (ev) {
-            if (ev.key === '2') {
+            if (ev.which === 2) {
                 $(ev.target).trigger('close.oc.tab');
             }
         })

@@ -269,11 +269,11 @@ var target=this.getEventTarget(ev,'TD')
 if(!target){this.unfocusTable();return;}
 if(target.tagName!='TD'){this.unfocusTable();return;}
 this.focusCell(target,true)}
-Table.prototype.onKeydown=function(ev){if((ev.key==='a'||ev.key==='A')&&ev.altKey&&this.options.adding){if(!ev.shiftKey){this.addRecord('below')}
+Table.prototype.onKeydown=function(ev){if(ev.keyCode==65&&ev.altKey&&this.options.adding){if(!ev.shiftKey){this.addRecord('below')}
 else{this.addRecord('above')}
 this.stopEvent(ev)
 return}
-if((ev.key==='d'||ev.key==='D')&&ev.altKey&&this.options.deleting){this.deleteRecord()
+if(ev.keyCode==68&&ev.altKey&&this.options.deleting){this.deleteRecord()
 this.stopEvent(ev)
 return}
 for(var i=0,len=this.options.columns.length;i<len;i++){var column=this.options.columns[i].key
@@ -527,15 +527,15 @@ if(focusRow)
 this.focusCell(focusRow,cellIndex)
 else
 this.focusCell('top',cellIndex)}}
-Navigation.prototype.onKeydown=function(ev){if(ev.key==='ArrowDown')
+Navigation.prototype.onKeydown=function(ev){if(ev.keyCode==40)
 return this.navigateDown(ev)
-else if(ev.key==='ArrowUp')
+else if(ev.keyCode==38)
 return this.navigateUp(ev)
-else if(ev.key==='ArrowLeft')
+else if(ev.keyCode==37)
 return this.navigateLeft(ev)
-if(ev.key==='ArrowRight')
+if(ev.keyCode==39)
 return this.navigateRight(ev)
-if(ev.key==='Tab')
+if(ev.keyCode==9)
 return this.navigateNext(ev)}
 Navigation.prototype.onClick=function(ev){var target=this.tableObj.getEventTarget(ev,'A')
 if(!target||!$(target).hasClass('pagination-link'))
@@ -570,7 +570,7 @@ Search.prototype.searchEnabled=function(){return this.tableObj.options.searching
 Search.prototype.performSearch=function(query,onSuccess){var isDirty=this.activeQuery!=query
 this.activeQuery=query
 if(isDirty){this.tableObj.updateDataTable(onSuccess)}}
-Search.prototype.onKeydown=function(ev){if(ev.key==='Tab'){this.onClick(ev)
+Search.prototype.onKeydown=function(ev){if(ev.keyCode==9){this.onClick(ev)
 return}
 if(!this.isActive){return}
 var self=this
@@ -765,7 +765,7 @@ checkbox.setAttribute('tabindex','0')
 if(value&&value!=0&&value!="false"){checkbox.setAttribute('class','checked')}
 cellContentContainer.appendChild(checkbox)}
 CheckboxProcessor.prototype.onFocus=function(cellElement,isClick){cellElement.querySelector('div[data-checkbox-element]').focus()}
-CheckboxProcessor.prototype.onKeyDown=function(ev){if(ev.key==='(Space character)'||ev.key==='Spacebar'||ev.key===' ')
+CheckboxProcessor.prototype.onKeyDown=function(ev){if(ev.keyCode==32)
 this.onClick(ev)}
 CheckboxProcessor.prototype.onClick=function(ev){var target=this.tableObj.getEventTarget(ev,'DIV')
 if(target.getAttribute('data-checkbox-element')){var container=this.getCheckboxContainerNode(target)
@@ -887,20 +887,20 @@ if(target.tagName=='LI'){target.focus();this.updateCellFromFocusedItem()
 this.hideDropdown()}}
 DropdownProcessor.prototype.onItemKeyDown=function(ev){if(!this.itemListElement)
 return
-if(ev.key==='ArrowDown'||ev.key==='ArrowUp')
+if(ev.keyCode==40||ev.keyCode==38)
 {var focused=this.findFocusedItem(),newFocusedItem=focused.nextElementSibling
-if(ev.key==='ArrowUp')
+if(ev.keyCode==38)
 newFocusedItem=focused.previousElementSibling
 if(newFocusedItem){newFocusedItem.focus()}
 return}
-if(ev.key==='Enter'||ev.key==='(Space character)'||ev.key==='Spacebar'||ev.key===' '){this.updateCellFromFocusedItem()
+if(ev.keyCode==13||ev.keyCode==32){this.updateCellFromFocusedItem()
 this.hideDropdown()
 return}
-if(ev.key==='Tab'){this.updateCellFromFocusedItem()
+if(ev.keyCode==9){this.updateCellFromFocusedItem()
 this.tableObj.navigation.navigateNext(ev)
 this.tableObj.stopEvent(ev)
 return}
-if(ev.key==='Escape'){this.hideDropdown()
+if(ev.keyCode==27){this.hideDropdown()
 return}
 this.searchByTextInput(ev,true);}
 DropdownProcessor.prototype.onItemMouseMove=function(ev){if(!this.itemListElement)
@@ -909,9 +909,9 @@ var target=this.tableObj.getEventTarget(ev)
 if(target.tagName=='LI'){target.focus();}}
 DropdownProcessor.prototype.onKeyDown=function(ev){if(!this.itemListElement)
 return
-if((ev.key==='(Space character)'||ev.key==='Spacebar'||ev.key===' ')&&!this.searching){this.showDropdown()}else if(ev.key==='ArrowDown'||ev.key==='ArrowUp'){var selected=this.findSelectedItem(),newSelectedItem;if(!selected){if(ev.key==='ArrowUp'){return false}
+if(ev.keyCode==32&&!this.searching){this.showDropdown()}else if(ev.keyCode==40||ev.keyCode==38){var selected=this.findSelectedItem(),newSelectedItem;if(!selected){if(ev.keyCode==38){return false}
 newSelectedItem=this.itemListElement.querySelector('ul li:first-child')}else{newSelectedItem=selected.nextElementSibling
-if(ev.key==='ArrowUp')
+if(ev.keyCode==38)
 newSelectedItem=selected.previousElementSibling}
 if(newSelectedItem){this.setSelectedItem(newSelectedItem);}
 return false}else{this.searchByTextInput(ev);}}

@@ -318,13 +318,13 @@
         if (!this.itemListElement)
             return
 
-        if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp')
+        if (ev.keyCode == 40 || ev.keyCode == 38)
         {
             // Up or down keys - find previous/next list item and select it
             var focused = this.findFocusedItem(),
                 newFocusedItem = focused.nextElementSibling
 
-            if (ev.key === 'ArrowUp')
+            if (ev.keyCode == 38)
                 newFocusedItem = focused.previousElementSibling
 
             if (newFocusedItem) {
@@ -334,14 +334,14 @@
             return
         }
 
-        if (ev.key === 'Enter' || ev.key === '(Space character)' || ev.key === 'Spacebar' || ev.key === ' ') {
+        if (ev.keyCode == 13 || ev.keyCode == 32) {
             // Return or space keys - update the selected value and hide the editor
             this.updateCellFromFocusedItem()
             this.hideDropdown()
             return
         }
 
-        if (ev.key === 'Tab') {
+        if (ev.keyCode == 9) {
             // Tab - update the selected value and pass control to the table navigation
             this.updateCellFromFocusedItem()
             this.tableObj.navigation.navigateNext(ev)
@@ -349,7 +349,7 @@
             return
         }
 
-        if (ev.key === 'Escape') {
+        if (ev.keyCode == 27) {
             // Esc - hide the drop-down
             this.hideDropdown()
             return
@@ -380,14 +380,14 @@
         if (!this.itemListElement)
             return
 
-        if ((ev.key === '(Space character)' || ev.key === 'Spacebar' || ev.key === ' ') && !this.searching) { // Spacebar
+        if (ev.keyCode == 32 && !this.searching) { // Spacebar
             this.showDropdown()
-        } else if (ev.key === 'ArrowDown'  || ev.key === 'ArrowUp') { // Up and down arrow keys
+        } else if (ev.keyCode == 40 || ev.keyCode == 38) { // Up and down arrow keys
             var selected = this.findSelectedItem(),
                 newSelectedItem;
 
             if (!selected) {
-                if (ev.key === 'ArrowUp') {
+                if (ev.keyCode == 38) {
                     // Only show an initial item when the down array key is pressed
                     return false
                 }
@@ -395,7 +395,7 @@
             } else {
                 newSelectedItem = selected.nextElementSibling
 
-                if (ev.key === 'ArrowUp')
+                if (ev.keyCode == 38)
                     newSelectedItem = selected.previousElementSibling
             }
 

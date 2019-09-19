@@ -537,10 +537,10 @@
     }
 
     StringListAutocomplete.prototype.onKeyDown = function(ev) {
-        if (ev.key === 'ArrowDown') {
+        if (ev.keyCode == 40) {
             return this.navigateDown(ev)
         }
-        else if (ev.key === 'ArrowUp') {
+        else if (ev.keyCode == 38) {
             return this.navigateUp(ev)
         }
     }
